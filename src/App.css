@@ -2,3 +2,41 @@
   text-align: center;
 }
 
+img {
+  height: 590px;
+  width: 360px;
+}
+
+.app__layout{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  position: relative;
+  align-items: center;
+  margin-bottom: -4px;
+  overflow: hidden;
+}
+
+.overlay{
+  transition: bottom cubic-bezier(1, 0.01, 0.02, 0.98) 1s;
+  position: absolute;
+  bottom: -100px;
+  background-color: palegreen;
+  width: 100%;
+  opacity: 0;
+}
+
+.item:hover .overlay{
+  opacity: 0.8;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px){
+
+  .app__layout{
+    display: flex;
+    flex-direction: column;
+  }
+}
