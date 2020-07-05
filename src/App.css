@@ -8,8 +8,8 @@ img {
 }
 
 .app__layout{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .item{
@@ -31,12 +31,4 @@ img {
 .item:hover .overlay{
   opacity: 0.8;
   bottom: 0;
-}
-
-@media only screen and (max-width: 600px){
-
-  .app__layout{
-    display: flex;
-    flex-direction: column;
-  }
 }
