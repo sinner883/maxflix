@@ -13,7 +13,7 @@ function App() {
                 <div className="App">
                     <h1>My Video Collection</h1>
                     <Route exact path='/' component={Movies} />
-                    <Route exact path='/Details' component={Details} />
+                    <Route exact path='/:movieId' component={Details} />
                 </div>
             </div>
         </Router>
